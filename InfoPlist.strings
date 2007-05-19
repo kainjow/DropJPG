@@ -1,0 +1,6 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "DropJPG";
+CFBundleShortVersionString = "DropJPG version 3.0";
+CFBundleGetInfoString = "DropJPG version 3.0, Copyright 2002-2007 Kevin Wojniak.";
+NSHumanReadableCopyright = "Copyright 2002-2007 Kevin Wojniak.";

@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {save = id; }; 
+            CLASS = Prefs; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {matrix = NSMatrix; slider = NSSlider; }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}
