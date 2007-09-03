@@ -192,7 +192,14 @@
 
 - (IBAction)sendFeedback:(id)sender
 {
-	[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"mailto:kainjow@kainjow.com?subject=DropJPG%20Feedback"]];
+	NSDictionary *infoPlist = [[NSBundle mainBundle] infoDictionary];
+	NSString *appVersion = [infoPlist objectForKey:@"CFBundleVersion"];
+	NSString *appName = [infoPlist objectForKey:@"CFBundleName"];
+	NSString *email = @"kainjow@kainjow.com";
+	NSString *urlString = [[NSString stringWithFormat:@"mailto:%@?subject=%@ %@ Feedback", email, appName, appVersion] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+	NSURL *emailURL = [NSURL URLWithString:urlString];
+	if (emailURL)
+		[[NSWorkspace sharedWorkspace] openURL:emailURL];
 }
 
 #pragma mark -
@@ -205,7 +212,7 @@
 
 - (void)updateSampleImageData
 {
-	[self setSampleImage:[self jpegDataForImage:[NSImage imageNamed:@"NSApplicationIcon"]]];
+	[self setSampleImage:[self jpegDataForImage:[NSImage imageNamed:@"pippy"]]];
 }
 
 - (void)setSampleImage:(NSData *)sampleImage
