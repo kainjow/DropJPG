@@ -9,30 +9,43 @@
 /* Begin PBXBuildFile section */
 		A550C1FA0B5C230700E7CE4E /* DJStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = A550C19D0B5C1F5E00E7CE4E /* DJStatusView.m */; };
 		A56FA4F00B5BE5BF00BFE93E /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97319FDCFA39411CA2CEA /* MainMenu.nib */; };
-		A56FA5450B5BE82A00BFE93E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A56FA5200B5BE6D400BFE93E /* InfoPlist.strings */; };
 		A56FA6050B5BF34300BFE93E /* NSFileManagerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A56FA5FE0B5BF32900BFE93E /* NSFileManagerAdditions.m */; };
-		A5FFEEC3081F35DB00935C4B /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = F61B6E6F0487E88A015F5C4B /* AppIcon.icns */; };
+		A5D983450C8B9184002A802F /* DropJPG512.icns in Resources */ = {isa = PBXBuildFile; fileRef = A5D983440C8B9184002A802F /* DropJPG512.icns */; };
+		A5D984BD0C8B96D9002A802F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5D984BC0C8B96D9002A802F /* InfoPlist.strings */; };
+		A5D984CA0C8B9878002A802F /* pippy.bmp in Resources */ = {isa = PBXBuildFile; fileRef = A5D984C90C8B9878002A802F /* pippy.bmp */; };
 		A5FFEEC5081F35DB00935C4B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		A5FFEEC6081F35DB00935C4B /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = F550B43602FECE9401A80164 /* AppController.m */; };
 		A5FFEEC9081F35DB00935C4B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A5D986C20C8B9BF9002A802F /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97319FDCFA39411CA2CEA /* MainMenu.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = MainMenu.nib; sourceTree = "<group>"; };
-		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
-		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		A550C19C0B5C1F5E00E7CE4E /* DJStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJStatusView.h; sourceTree = "<group>"; };
 		A550C19D0B5C1F5E00E7CE4E /* DJStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJStatusView.m; sourceTree = "<group>"; };
-		A56FA5200B5BE6D400BFE93E /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		A56FA5FD0B5BF32900BFE93E /* NSFileManagerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSFileManagerAdditions.h; sourceTree = "<group>"; };
 		A56FA5FE0B5BF32900BFE93E /* NSFileManagerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSFileManagerAdditions.m; sourceTree = "<group>"; };
+		A5D983440C8B9184002A802F /* DropJPG512.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = DropJPG512.icns; sourceTree = "<group>"; };
+		A5D984BC0C8B96D9002A802F /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		A5D984C90C8B9878002A802F /* pippy.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = pippy.bmp; sourceTree = "<group>"; };
 		A5FFEECA081F35DB00935C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5FFEECB081F35DB00935C4B /* DropJPG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropJPG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F550B43502FECE9401A80164 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		F550B43602FECE9401A80164 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
-		F61B6E6F0487E88A015F5C4B /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +85,6 @@
 		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
-				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
 			);
 			name = "Other Frameworks";
 			sourceTree = "<group>";
@@ -101,9 +112,10 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A5D983440C8B9184002A802F /* DropJPG512.icns */,
 				29B97319FDCFA39411CA2CEA /* MainMenu.nib */,
-				F61B6E6F0487E88A015F5C4B /* AppIcon.icns */,
-				A56FA5200B5BE6D400BFE93E /* InfoPlist.strings */,
+				A5D984BC0C8B96D9002A802F /* InfoPlist.strings */,
+				A5D984C90C8B9878002A802F /* pippy.bmp */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -127,6 +139,7 @@
 				A5FFEEBF081F35DB00935C4B /* Resources */,
 				A5FFEEC4081F35DB00935C4B /* Sources */,
 				A5FFEEC8081F35DB00935C4B /* Frameworks */,
+				A5D986C20C8B9BF9002A802F /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,8 +180,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A56FA4F00B5BE5BF00BFE93E /* MainMenu.nib in Resources */,
-				A5FFEEC3081F35DB00935C4B /* AppIcon.icns in Resources */,
-				A56FA5450B5BE82A00BFE93E /* InfoPlist.strings in Resources */,
+				A5D983450C8B9184002A802F /* DropJPG512.icns in Resources */,
+				A5D984BD0C8B96D9002A802F /* InfoPlist.strings in Resources */,
+				A5D984CA0C8B9878002A802F /* pippy.bmp in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +211,11 @@
 					i386,
 				);
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)\"";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -230,7 +248,11 @@
 					i386,
 				);
 				COPY_PHASE_STRIP = YES;
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)\"";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Info.plist;
@@ -239,13 +261,10 @@
 				MACOSX_DEPLOYMENT_TARGET = "";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
 				PRODUCT_NAME = DropJPG;
 				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
+				WARNING_CFLAGS = "";
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
 			};
@@ -254,7 +273,11 @@
 		A58EC1E80856CA1500FC6F2D /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)\"";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
@@ -284,7 +307,7 @@
 		A58EC1EB0856CA1500FC6F2D /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = "";
 				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
 			};
 			name = Deployment;
