@@ -1,14 +1,23 @@
-/* AppController */
+//
+//  AppController.h
+//  DropJPG
+//
+//  Copyright 2009 Kevin Wojniak. All rights reserved.
+//
 
 #import <Cocoa/Cocoa.h>
 
+
+@class Converter, PrefsController;
+
 @interface AppController : NSObject
 {
-	NSStatusItem *_statusItem;
-	
-	NSData *_sampleData;
+	Converter *converter;
+	PrefsController *prefsController;
+	CFAbsoluteTime t;
 }
 
 - (IBAction)sendFeedback:(id)sender;
+- (IBAction)openPrefs:(id)sender;
 
 @end

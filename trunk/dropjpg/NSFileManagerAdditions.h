@@ -1,11 +1,16 @@
 //
 //  NSFileManagerAdditions.h
-//  TRKit
+//  DropJPG
+//
+//  Created by Kevin Wojniak on 9/22/09.
+//  Copyright 2009 Kevin Wojniak. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>
-#import <Carbon/Carbon.h>
 
-@interface NSFileManager (TRAdditions)
-- (BOOL)trashPath:(NSString *)source showAlerts:(BOOL)flag;
+
+@interface NSFileManager (DJAdditions)
+
+- (NSURL *)makeUniqueURL:(NSURL *)URL;
+
 @end

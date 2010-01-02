@@ -3,16 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 42;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A550C1FA0B5C230700E7CE4E /* DJStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = A550C19D0B5C1F5E00E7CE4E /* DJStatusView.m */; };
-		A56FA4F00B5BE5BF00BFE93E /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97319FDCFA39411CA2CEA /* MainMenu.nib */; };
-		A56FA6050B5BF34300BFE93E /* NSFileManagerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A56FA5FE0B5BF32900BFE93E /* NSFileManagerAdditions.m */; };
+		A5AB45A91069C502001A25EA /* Prefs.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5AB45A71069C502001A25EA /* Prefs.xib */; };
+		A5AB45B01069C609001A25EA /* PrefsController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5AB45AF1069C609001A25EA /* PrefsController.m */; };
+		A5AB45C91069C765001A25EA /* Converter.m in Sources */ = {isa = PBXBuildFile; fileRef = A5AB45C81069C765001A25EA /* Converter.m */; };
+		A5AB45F61069C85E001A25EA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5AB45F41069C85E001A25EA /* MainMenu.xib */; };
+		A5AB48131069FD46001A25EA /* NSFileManagerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A5AB48121069FD46001A25EA /* NSFileManagerAdditions.m */; };
+		A5AB4B2B106B3BFC001A25EA /* sample.png in Resources */ = {isa = PBXBuildFile; fileRef = A5AB4B2A106B3BFC001A25EA /* sample.png */; };
+		A5C156A210EFDD37002385B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5C156A010EFDD37002385B7 /* InfoPlist.strings */; };
 		A5D983450C8B9184002A802F /* DropJPG512.icns in Resources */ = {isa = PBXBuildFile; fileRef = A5D983440C8B9184002A802F /* DropJPG512.icns */; };
-		A5D984BD0C8B96D9002A802F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5D984BC0C8B96D9002A802F /* InfoPlist.strings */; };
-		A5D984CA0C8B9878002A802F /* pippy.bmp in Resources */ = {isa = PBXBuildFile; fileRef = A5D984C90C8B9878002A802F /* pippy.bmp */; };
 		A5FFEEC5081F35DB00935C4B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		A5FFEEC6081F35DB00935C4B /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = F550B43602FECE9401A80164 /* AppController.m */; };
 		A5FFEEC9081F35DB00935C4B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -34,15 +36,19 @@
 /* Begin PBXFileReference section */
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		29B97319FDCFA39411CA2CEA /* MainMenu.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = MainMenu.nib; sourceTree = "<group>"; };
-		A550C19C0B5C1F5E00E7CE4E /* DJStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJStatusView.h; sourceTree = "<group>"; };
-		A550C19D0B5C1F5E00E7CE4E /* DJStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJStatusView.m; sourceTree = "<group>"; };
-		A56FA5FD0B5BF32900BFE93E /* NSFileManagerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSFileManagerAdditions.h; sourceTree = "<group>"; };
-		A56FA5FE0B5BF32900BFE93E /* NSFileManagerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSFileManagerAdditions.m; sourceTree = "<group>"; };
+		A5AB45A81069C502001A25EA /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Prefs.xib; sourceTree = "<group>"; };
+		A5AB45AE1069C609001A25EA /* PrefsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefsController.h; sourceTree = "<group>"; };
+		A5AB45AF1069C609001A25EA /* PrefsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefsController.m; sourceTree = "<group>"; };
+		A5AB45C71069C765001A25EA /* Converter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Converter.h; sourceTree = "<group>"; };
+		A5AB45C81069C765001A25EA /* Converter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Converter.m; sourceTree = "<group>"; };
+		A5AB45F51069C85E001A25EA /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A5AB48111069FD46001A25EA /* NSFileManagerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSFileManagerAdditions.h; sourceTree = "<group>"; };
+		A5AB48121069FD46001A25EA /* NSFileManagerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSFileManagerAdditions.m; sourceTree = "<group>"; };
+		A5AB4B2A106B3BFC001A25EA /* sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample.png; sourceTree = "<group>"; };
+		A5C1557B10EFD26F002385B7 /* UserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaults.h; sourceTree = "<group>"; };
+		A5C156A110EFDD37002385B7 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A5D983440C8B9184002A802F /* DropJPG512.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = DropJPG512.icns; sourceTree = "<group>"; };
-		A5D984BC0C8B96D9002A802F /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
-		A5D984C90C8B9878002A802F /* pippy.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = pippy.bmp; sourceTree = "<group>"; };
-		A5FFEECA081F35DB00935C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5FFEECA081F35DB00935C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5FFEECB081F35DB00935C4B /* DropJPG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropJPG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F550B43502FECE9401A80164 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		F550B43602FECE9401A80164 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
@@ -64,29 +70,17 @@
 			isa = PBXGroup;
 			children = (
 				29B97316FDCFA39411CA2CEA /* main.m */,
+				A5C1557B10EFD26F002385B7 /* UserDefaults.h */,
 				F550B43502FECE9401A80164 /* AppController.h */,
 				F550B43602FECE9401A80164 /* AppController.m */,
-				A56FA5FD0B5BF32900BFE93E /* NSFileManagerAdditions.h */,
-				A56FA5FE0B5BF32900BFE93E /* NSFileManagerAdditions.m */,
-				A550C19C0B5C1F5E00E7CE4E /* DJStatusView.h */,
-				A550C19D0B5C1F5E00E7CE4E /* DJStatusView.m */,
+				A5AB45AE1069C609001A25EA /* PrefsController.h */,
+				A5AB45AF1069C609001A25EA /* PrefsController.m */,
+				A5AB45C71069C765001A25EA /* Converter.h */,
+				A5AB45C81069C765001A25EA /* Converter.m */,
+				A5AB48111069FD46001A25EA /* NSFileManagerAdditions.h */,
+				A5AB48121069FD46001A25EA /* NSFileManagerAdditions.m */,
 			);
 			name = Classes;
-			sourceTree = "<group>";
-		};
-		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
-			);
-			name = "Linked Frameworks";
-			sourceTree = "<group>";
-		};
-		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
@@ -113,9 +107,10 @@
 			isa = PBXGroup;
 			children = (
 				A5D983440C8B9184002A802F /* DropJPG512.icns */,
-				29B97319FDCFA39411CA2CEA /* MainMenu.nib */,
-				A5D984BC0C8B96D9002A802F /* InfoPlist.strings */,
-				A5D984C90C8B9878002A802F /* pippy.bmp */,
+				A5AB45F41069C85E001A25EA /* MainMenu.xib */,
+				A5AB45A71069C502001A25EA /* Prefs.xib */,
+				A5C156A010EFDD37002385B7 /* InfoPlist.strings */,
+				A5AB4B2A106B3BFC001A25EA /* sample.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -123,8 +118,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
-				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -157,6 +151,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = A58EC1E90856CA1500FC6F2D /* Build configuration list for PBXProject "DropJPG" */;
+			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				English,
@@ -168,6 +163,7 @@
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* DropJPEG */;
 			projectDirPath = "";
+			projectRoot = "";
 			targets = (
 				A5FFEEBB081F35DB00935C4B /* DropJPG */,
 			);
@@ -179,10 +175,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A56FA4F00B5BE5BF00BFE93E /* MainMenu.nib in Resources */,
 				A5D983450C8B9184002A802F /* DropJPG512.icns in Resources */,
-				A5D984BD0C8B96D9002A802F /* InfoPlist.strings in Resources */,
-				A5D984CA0C8B9878002A802F /* pippy.bmp in Resources */,
+				A5AB45A91069C502001A25EA /* Prefs.xib in Resources */,
+				A5AB45F61069C85E001A25EA /* MainMenu.xib in Resources */,
+				A5AB4B2B106B3BFC001A25EA /* sample.png in Resources */,
+				A5C156A210EFDD37002385B7 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,78 +192,65 @@
 			files = (
 				A5FFEEC5081F35DB00935C4B /* main.m in Sources */,
 				A5FFEEC6081F35DB00935C4B /* AppController.m in Sources */,
-				A56FA6050B5BF34300BFE93E /* NSFileManagerAdditions.m in Sources */,
-				A550C1FA0B5C230700E7CE4E /* DJStatusView.m in Sources */,
+				A5AB45B01069C609001A25EA /* PrefsController.m in Sources */,
+				A5AB45C91069C765001A25EA /* Converter.m in Sources */,
+				A5AB48131069FD46001A25EA /* NSFileManagerAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		A5AB45A71069C502001A25EA /* Prefs.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5AB45A81069C502001A25EA /* English */,
+			);
+			name = Prefs.xib;
+			sourceTree = "<group>";
+		};
+		A5AB45F41069C85E001A25EA /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5AB45F51069C85E001A25EA /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		A5C156A010EFDD37002385B7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5C156A110EFDD37002385B7 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		A58EC1E60856CA1500FC6F2D /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
-				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
-				);
-				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)\"";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
-				LIBRARY_SEARCH_PATHS = "";
-				MACOSX_DEPLOYMENT_TARGET = "";
-				OPTIMIZATION_CFLAGS = "-O0";
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = DropJPG;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
 				WRAPPER_EXTENSION = app;
-				ZERO_LINK = YES;
 			};
 			name = Development;
 		};
 		A58EC1E70856CA1500FC6F2D /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
 				COPY_PHASE_STRIP = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
-				);
-				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)\"";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
-				LIBRARY_SEARCH_PATHS = "";
-				MACOSX_DEPLOYMENT_TARGET = "";
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = DropJPG;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = "";
 				WRAPPER_EXTENSION = app;
-				ZERO_LINK = NO;
 			};
 			name = Deployment;
 		};
@@ -299,24 +283,37 @@
 		A58EC1EA0856CA1500FC6F2D /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				GCC_ENABLE_OBJC_GC = required;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx10.6;
 			};
 			name = Development;
 		};
 		A58EC1EB0856CA1500FC6F2D /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = "";
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_ENABLE_OBJC_GC = required;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx10.6;
+				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Deployment;
 		};
 		A58EC1EC0856CA1500FC6F2D /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx10.6;
 			};
 			name = Default;
 		};
