@@ -13,7 +13,6 @@
 		A5AB45F61069C85E001A25EA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5AB45F41069C85E001A25EA /* MainMenu.xib */; };
 		A5AB48131069FD46001A25EA /* NSFileManagerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A5AB48121069FD46001A25EA /* NSFileManagerAdditions.m */; };
 		A5AB4B2B106B3BFC001A25EA /* sample.png in Resources */ = {isa = PBXBuildFile; fileRef = A5AB4B2A106B3BFC001A25EA /* sample.png */; };
-		A5C156A210EFDD37002385B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5C156A010EFDD37002385B7 /* InfoPlist.strings */; };
 		A5D983450C8B9184002A802F /* DropJPG512.icns in Resources */ = {isa = PBXBuildFile; fileRef = A5D983440C8B9184002A802F /* DropJPG512.icns */; };
 		A5FFEEC5081F35DB00935C4B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		A5FFEEC6081F35DB00935C4B /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = F550B43602FECE9401A80164 /* AppController.m */; };
@@ -33,7 +32,6 @@
 		A5AB48121069FD46001A25EA /* NSFileManagerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSFileManagerAdditions.m; sourceTree = "<group>"; };
 		A5AB4B2A106B3BFC001A25EA /* sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample.png; sourceTree = "<group>"; };
 		A5C1557B10EFD26F002385B7 /* UserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaults.h; sourceTree = "<group>"; };
-		A5C156A110EFDD37002385B7 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A5D983440C8B9184002A802F /* DropJPG512.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = DropJPG512.icns; sourceTree = "<group>"; };
 		A5FFEECA081F35DB00935C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5FFEECB081F35DB00935C4B /* DropJPG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropJPG.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,7 +94,6 @@
 				A5D983440C8B9184002A802F /* DropJPG512.icns */,
 				A5AB45F41069C85E001A25EA /* MainMenu.xib */,
 				A5AB45A71069C502001A25EA /* Prefs.xib */,
-				A5C156A010EFDD37002385B7 /* InfoPlist.strings */,
 				A5AB4B2A106B3BFC001A25EA /* sample.png */,
 			);
 			name = Resources;
@@ -169,7 +166,6 @@
 				A5AB45A91069C502001A25EA /* Prefs.xib in Resources */,
 				A5AB45F61069C85E001A25EA /* MainMenu.xib in Resources */,
 				A5AB4B2B106B3BFC001A25EA /* sample.png in Resources */,
-				A5C156A210EFDD37002385B7 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,14 +201,6 @@
 				A5AB45F51069C85E001A25EA /* English */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		A5C156A010EFDD37002385B7 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A5C156A110EFDD37002385B7 /* English */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
