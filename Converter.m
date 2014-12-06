@@ -42,10 +42,7 @@
 {
 	if (bgColor)
 		CGColorRelease(bgColor);
-	NSColor *rgbColor = [color colorUsingColorSpace:[NSColorSpace genericRGBColorSpace]];
-    CGFloat r, g, b, a;
-    [rgbColor getRed:&r green:&g blue:&b alpha:&a];
-	bgColor = CGColorCreateGenericRGB(r, g, b, a);
+    bgColor = (CGColorRef)CFRetain([color CGColor]);
 }
 
 - (CFDataRef)copyJpegDataForImage:(CGImageRef)image hasAlpha:(BOOL)__unused hasAlpha
