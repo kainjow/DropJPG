@@ -25,7 +25,7 @@
 @property BOOL moveOriginalToTrash;
 @property BOOL showInFinder;
 
-- (BOOL)convertImageAtURL:(NSURL *)imageURL toDirectory:(NSURL *)directoryURL completionHandler:(void (^)())handler;
+- (void)convertImageAtURL:(NSURL *)imageURL toDirectory:(NSURL *)directoryURL completionHandler:(void (^)())handler;
 
 - (NSImage *)convertSampleImage:(CGImageRef)image;
 

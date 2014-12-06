@@ -58,7 +58,7 @@
 	
 }	
 
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+- (void)observeValueForKeyPath:(NSString *)__unused keyPath ofObject:(id)__unused object change:(NSDictionary *)__unused change context:(void *)__unused context
 {
 	[self updateSampleImageData];
 }

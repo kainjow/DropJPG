@@ -25,7 +25,7 @@
 		nil]];
 }
 
-- (void)application:(NSApplication *)sender openFiles:(NSArray *)filenames
+- (void)application:(NSApplication *)__unused sender openFiles:(NSArray *)filenames
 {
 	t = CFAbsoluteTimeGetCurrent();
 	
@@ -84,7 +84,7 @@
 #pragma mark -
 #pragma mark Actions
 
-- (IBAction)sendFeedback:(id)sender
+- (IBAction)sendFeedback:(id)__unused sender
 {
 	NSDictionary *infoPlist = [[NSBundle mainBundle] infoDictionary];
 	NSString *appVersion = [infoPlist objectForKey:(NSString *)kCFBundleVersionKey];
@@ -96,7 +96,7 @@
 		[[NSWorkspace sharedWorkspace] openURL:emailURL];
 }
 
-- (IBAction)openPrefs:(id)sender
+- (IBAction)openPrefs:(id)__unused sender
 {
 	if (!prefsController)
 		prefsController = [[PrefsController alloc] init];

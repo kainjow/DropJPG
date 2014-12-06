@@ -42,7 +42,7 @@
 	bgColor = CGColorCreateGenericRGB(r, g, b, a);
 }
 
-- (CFDataRef)copyJpegDataForImage:(CGImageRef)image hasAlpha:(BOOL)hasAlpha
+- (CFDataRef)copyJpegDataForImage:(CGImageRef)image hasAlpha:(BOOL)__unused hasAlpha
 {
 	CFMutableDataRef data = NULL;
 	CGSize imageSize;
@@ -138,6 +138,8 @@ bail:
 		[[NSOperationQueue mainQueue] addOperationWithBlock:^{
 			[[NSWorkspace sharedWorkspace] selectFile:[jpgURL path] inFileViewerRootedAtPath:nil];
 		}];
+    
+    return YES;
 }
 
 - (NSImage *)convertSampleImage:(CGImageRef)image
@@ -149,10 +151,10 @@ bail:
 	return [[NSImage alloc] initWithData:jpgData];
 }
 
-- (BOOL)convertImageAtURL:(NSURL *)imageURL toDirectory:(NSURL *)directoryURL completionHandler:(void (^)())handler
+- (void)convertImageAtURL:(NSURL *)imageURL toDirectory:(NSURL *)directoryURL completionHandler:(void (^)())handler
 {
 	[queue addOperationWithBlock:^{
-		[self doConvertImageAtURL:imageURL toDirectory:directoryURL];
+		(void)[self doConvertImageAtURL:imageURL toDirectory:directoryURL];
 		
 		if ([queue operationCount] == 1 && handler) // will be 1 if this is the last operation
 			[[NSOperationQueue mainQueue] addOperationWithBlock:^{
