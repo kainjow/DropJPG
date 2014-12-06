@@ -206,7 +206,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A58EC1E60856CA1500FC6F2D /* Development */ = {
+		A58EC1E60856CA1500FC6F2D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -217,9 +217,9 @@
 				PRODUCT_NAME = DropJPG;
 				WRAPPER_EXTENSION = app;
 			};
-			name = Development;
+			name = Debug;
 		};
-		A58EC1E70856CA1500FC6F2D /* Deployment */ = {
+		A58EC1E70856CA1500FC6F2D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -229,19 +229,9 @@
 				PRODUCT_NAME = DropJPG;
 				WRAPPER_EXTENSION = app;
 			};
-			name = Deployment;
+			name = Release;
 		};
-		A58EC1E80856CA1500FC6F2D /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = Info.plist;
-				PRODUCT_NAME = DropJPG;
-				WRAPPER_EXTENSION = app;
-			};
-			name = Default;
-		};
-		A58EC1EA0856CA1500FC6F2D /* Development */ = {
+		A58EC1EA0856CA1500FC6F2D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -256,9 +246,9 @@
 					"-Wextra",
 				);
 			};
-			name = Development;
+			name = Debug;
 		};
-		A58EC1EB0856CA1500FC6F2D /* Deployment */ = {
+		A58EC1EB0856CA1500FC6F2D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -274,26 +264,7 @@
 					"-Wextra",
 				);
 			};
-			name = Deployment;
-		};
-		A58EC1EC0856CA1500FC6F2D /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = YES;
-				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_PARAMETER = NO;
-				GCC_WARN_UNUSED_VALUE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				WARNING_CFLAGS = (
-					"-Wall",
-					"-Wextra",
-				);
-			};
-			name = Default;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -301,22 +272,20 @@
 		A58EC1E50856CA1500FC6F2D /* Build configuration list for PBXNativeTarget "DropJPG" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A58EC1E60856CA1500FC6F2D /* Development */,
-				A58EC1E70856CA1500FC6F2D /* Deployment */,
-				A58EC1E80856CA1500FC6F2D /* Default */,
+				A58EC1E60856CA1500FC6F2D /* Debug */,
+				A58EC1E70856CA1500FC6F2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Debug;
 		};
 		A58EC1E90856CA1500FC6F2D /* Build configuration list for PBXProject "DropJPG" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A58EC1EA0856CA1500FC6F2D /* Development */,
-				A58EC1EB0856CA1500FC6F2D /* Deployment */,
-				A58EC1EC0856CA1500FC6F2D /* Default */,
+				A58EC1EA0856CA1500FC6F2D /* Debug */,
+				A58EC1EB0856CA1500FC6F2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
