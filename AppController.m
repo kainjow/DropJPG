@@ -38,7 +38,7 @@
 		[openPanel setCanChooseFiles:NO];
 		[openPanel setCanChooseDirectories:YES];
 		[openPanel setAllowsMultipleSelection:NO];
-		if ([openPanel runModal] == NSCancelButton)
+		if ([openPanel runModal] == NSFileHandlingPanelCancelButton)
 			return;
 		destURL = [openPanel URL];
 	}

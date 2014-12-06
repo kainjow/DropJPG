@@ -131,10 +131,9 @@ bail:
 	NSURL *jpgURL = [directoryURL URLByAppendingPathComponent:fileName];
 	jpgURL = [[NSFileManager defaultManager] makeUniqueURL:jpgURL];
 	
-	SInt32 err;
-	CFURLWriteDataAndPropertiesToResource((CFURLRef)jpgURL, jpgData, NULL, &err);
+    BOOL wrote = [(NSData*)jpgData writeToURL:jpgURL atomically:YES];
 	CFRelease(jpgData);
-	if (err != noErr)
+	if (!wrote)
 		return NO;
 	
 	if (moveOriginalToTrash)
