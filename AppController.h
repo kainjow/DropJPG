@@ -14,7 +14,6 @@
 {
 	Converter *converter;
 	PrefsController *prefsController;
-	CFAbsoluteTime t;
 }
 
 - (IBAction)sendFeedback:(id)sender;

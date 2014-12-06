@@ -27,8 +27,6 @@
 
 - (void)application:(NSApplication *)__unused sender openFiles:(NSArray *)filenames
 {
-	t = CFAbsoluteTimeGetCurrent();
-	
 	NSURL *destURL = nil;
 	NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
 
@@ -51,8 +49,6 @@
 	converter.showInFinder = [ud boolForKey:DJShowInFinder];
 
 	void (^completionHandler)() = ^{
-		NSLog(@"time: %f", CFAbsoluteTimeGetCurrent() - t);
-		
         NSUserNotification *notif = [[NSUserNotification alloc] init];
         notif.title = NSLocalizedString(@"Conversion complete.", "");
         [[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:notif];
