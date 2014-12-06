@@ -51,7 +51,7 @@
 	CGRect imageRect;
 	CGImageRef finalImage = NULL;
 	CGImageDestinationRef imgDest = NULL;
-	CFMutableDictionaryRef properties = NULL;
+    NSDictionary *properties = nil;
 
 	imageSize = CGSizeMake((CGFloat)CGImageGetWidth(image), (CGFloat)CGImageGetHeight(image));	
 	colorSpace = CGColorSpaceCreateWithName(kCGColorSpaceGenericRGB);
@@ -77,12 +77,8 @@
 	imgDest = CGImageDestinationCreateWithData(data, kUTTypeJPEG, 1, NULL);
 	if (!imgDest)
 		goto bail;
-	properties = CFDictionaryCreateMutable(NULL, 0, &kCFTypeDictionaryKeyCallBacks, &kCFTypeDictionaryValueCallBacks);
-	if (!properties)
-		goto bail;
-	
-	CFDictionaryAddValue(properties, kCGImageDestinationLossyCompressionQuality, [NSNumber numberWithFloat:imageQuality]);
-	CGImageDestinationAddImage(imgDest, finalImage, properties);
+    properties = @{(__bridge NSString*)kCGImageDestinationLossyCompressionQuality : @(imageQuality)};
+	CGImageDestinationAddImage(imgDest, finalImage, (__bridge CFDictionaryRef)properties);
 	if (!CGImageDestinationFinalize(imgDest))
 		goto bail;
 	
@@ -95,8 +91,6 @@ bail:
 		CGImageRelease(finalImage);
 	if (imgDest)
 		CFRelease(imgDest);
-	if (properties)
-		CFRelease(properties);
 	
 	return data;
 }
@@ -122,7 +116,7 @@ bail:
 	if (!image)
 		return NO;
 		
-	CFDataRef jpgData = [self copyJpegDataForImage:image hasAlpha:hasAlpha];
+	NSData *jpgData = (__bridge_transfer NSData*)[self copyJpegDataForImage:image hasAlpha:hasAlpha];
 	CGImageRelease(image);
 	if (!jpgData)
 		return NO;
@@ -131,8 +125,7 @@ bail:
 	NSURL *jpgURL = [directoryURL URLByAppendingPathComponent:fileName];
 	jpgURL = [[NSFileManager defaultManager] makeUniqueURL:jpgURL];
 	
-    BOOL wrote = [(NSData*)jpgData writeToURL:jpgURL atomically:YES];
-	CFRelease(jpgData);
+    BOOL wrote = [jpgData writeToURL:jpgURL atomically:YES];
 	if (!wrote)
 		return NO;
 	
@@ -149,13 +142,11 @@ bail:
 
 - (NSImage *)convertSampleImage:(CGImageRef)image
 {
-	CFDataRef jpgData = [self copyJpegDataForImage:image hasAlpha:YES];
+	NSData *jpgData = (__bridge_transfer NSData*)[self copyJpegDataForImage:image hasAlpha:YES];
 	if (!jpgData)
 		return nil;
 	
-	NSImage *img = [[[NSImage alloc] initWithData:(NSData *)jpgData] autorelease];
-	CFRelease(jpgData);
-	return img;
+	return [[NSImage alloc] initWithData:jpgData];
 }
 
 - (BOOL)convertImageAtURL:(NSURL *)imageURL toDirectory:(NSURL *)directoryURL completionHandler:(void (^)())handler
