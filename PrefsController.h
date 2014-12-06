@@ -8,12 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-
 @interface PrefsController : NSWindowController
-{
-	CGImageRef original;
-	NSImage *sampleImage;
-}
 
 @property (readwrite, retain) NSImage *sampleImage;
 

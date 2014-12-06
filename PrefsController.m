@@ -10,8 +10,11 @@
 #import "Converter.h"
 #import "UserDefaults.h"
 
-
 @implementation PrefsController
+{
+    CGImageRef original;
+    NSImage *sampleImage;
+}
 
 @synthesize sampleImage;
 

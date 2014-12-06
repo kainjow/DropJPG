@@ -8,16 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-
 @interface Converter : NSObject
-{
-	NSOperationQueue *queue;
-	
-	CGColorRef bgColor;
-	CGFloat imageQuality;
-	BOOL moveOriginalToTrash;
-	BOOL showInFinder;
-}
 
 - (void)setBackgroundColor:(NSColor *)color;
 

@@ -8,7 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-
 @interface NSFileManager (DJAdditions)
 
 - (NSURL *)makeUniqueURL:(NSURL *)URL;

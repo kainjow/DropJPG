@@ -10,8 +10,11 @@
 #import "Converter.h"
 #import "PrefsController.h"
 
-
 @implementation AppController
+{
+    Converter *converter;
+    PrefsController *prefsController;
+}
 
 + (void)initialize
 {

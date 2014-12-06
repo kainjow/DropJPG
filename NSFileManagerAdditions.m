@@ -8,7 +8,6 @@
 
 #import "NSFileManagerAdditions.h"
 
-
 @implementation NSFileManager (DJAdditions)
 
 - (NSURL *)makeUniqueURL:(NSURL *)URL

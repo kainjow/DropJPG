@@ -3,7 +3,7 @@
  *  DropJPG
  *
  *  Created by Kevin Wojniak on 1/2/10.
- *  Copyright 2010 __MyCompanyName__. All rights reserved.
+ *  Copyright 2010 Kevin Wojniak. All rights reserved.
  *
  */
 

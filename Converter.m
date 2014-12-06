@@ -9,8 +9,14 @@
 #import "Converter.h"
 #import "NSFileManagerAdditions.h"
 
-
 @implementation Converter
+{
+    NSOperationQueue *queue;
+    CGColorRef bgColor;
+    CGFloat imageQuality;
+    BOOL moveOriginalToTrash;
+    BOOL showInFinder;
+}
 
 @synthesize imageQuality, moveOriginalToTrash, showInFinder;
 

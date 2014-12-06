@@ -7,14 +7,9 @@
 
 #import <Cocoa/Cocoa.h>
 
-
 @class Converter, PrefsController;
 
 @interface AppController : NSObject
-{
-	Converter *converter;
-	PrefsController *prefsController;
-}
 
 - (IBAction)sendFeedback:(id)sender;
 - (IBAction)openPrefs:(id)sender;
