@@ -22,12 +22,12 @@
 /* Begin PBXFileReference section */
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A5AB45A81069C502001A25EA /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Prefs.xib; sourceTree = "<group>"; };
+		A558C0061A33BE5300700E0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A558C0071A33BE5300700E0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Prefs.xib; sourceTree = "<group>"; };
 		A5AB45AE1069C609001A25EA /* PrefsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefsController.h; sourceTree = "<group>"; };
 		A5AB45AF1069C609001A25EA /* PrefsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefsController.m; sourceTree = "<group>"; };
 		A5AB45C71069C765001A25EA /* Converter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Converter.h; sourceTree = "<group>"; };
 		A5AB45C81069C765001A25EA /* Converter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Converter.m; sourceTree = "<group>"; };
-		A5AB45F51069C85E001A25EA /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		A5AB48111069FD46001A25EA /* NSFileManagerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSFileManagerAdditions.h; sourceTree = "<group>"; };
 		A5AB48121069FD46001A25EA /* NSFileManagerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSFileManagerAdditions.m; sourceTree = "<group>"; };
 		A5AB4B2A106B3BFC001A25EA /* sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample.png; sourceTree = "<group>"; };
@@ -147,6 +147,7 @@
 				German,
 				Italian,
 				Polish,
+				Base,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* DropJPEG */;
 			projectDirPath = "";
@@ -190,7 +191,7 @@
 		A5AB45A71069C502001A25EA /* Prefs.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A5AB45A81069C502001A25EA /* English */,
+				A558C0071A33BE5300700E0C /* Base */,
 			);
 			name = Prefs.xib;
 			sourceTree = "<group>";
@@ -198,7 +199,7 @@
 		A5AB45F41069C85E001A25EA /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A5AB45F51069C85E001A25EA /* English */,
+				A558C0061A33BE5300700E0C /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
