@@ -24,7 +24,7 @@
 	NSString *pathWithoutExtension = [path stringByDeletingPathExtension];
 	NSUInteger i = 1;
 	do {
-		path = [NSString stringWithFormat:@"%@ %d.%@", pathWithoutExtension, i++, pathExtension];
+		path = [NSString stringWithFormat:@"%@ %lu.%@", pathWithoutExtension, (unsigned long)i++, pathExtension];
 	} while ([self fileExistsAtPath:path]);
 	return [NSURL fileURLWithPath:path];
 }
