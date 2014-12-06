@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>LSMinimumSystemVersion</key>
-	<string>10.6.0</string>
+	<string>${MACOSX_DEPLOYMENT_TARGET}</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleDocumentTypes</key>
