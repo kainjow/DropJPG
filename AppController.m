@@ -53,6 +53,10 @@
 	void (^completionHandler)() = ^{
 		NSLog(@"time: %f", CFAbsoluteTimeGetCurrent() - t);
 		
+        NSUserNotification *notif = [[NSUserNotification alloc] init];
+        notif.title = NSLocalizedString(@"Conversion complete.", "");
+        [[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:notif];
+        
 		if ([[NSUserDefaults standardUserDefaults] boolForKey:DJQuitAfterConversion])
 			[NSApp terminate:nil];		
 	};
