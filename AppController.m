@@ -51,7 +51,7 @@
 	converter.moveOriginalToTrash = [ud boolForKey:DJDeleteOriginal];
 	converter.showInFinder = [ud boolForKey:DJShowInFinder];
 
-	void (^completionHandler)() = ^{
+	dispatch_block_t completionHandler = ^{
         NSUserNotification *notif = [[NSUserNotification alloc] init];
         notif.title = NSLocalizedString(@"Conversion complete.", "");
         [[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:notif];
