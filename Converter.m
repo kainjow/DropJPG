@@ -146,7 +146,9 @@ bail:
 - (void)convertImageAtURL:(NSURL *)imageURL toDirectory:(NSURL *)directoryURL completionHandler:(dispatch_block_t)handler
 {
 	[queue addOperationWithBlock:^{
-		(void)[self doConvertImageAtURL:imageURL toDirectory:directoryURL];
+        if (![self doConvertImageAtURL:imageURL toDirectory:directoryURL]) {
+            NSLog(@"Failed to convert %@", imageURL.path);
+        }
 		
 		if ([queue operationCount] == 1 && handler) // will be 1 if this is the last operation
             [[NSOperationQueue mainQueue] addOperationWithBlock:handler];
