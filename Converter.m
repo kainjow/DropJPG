@@ -45,7 +45,7 @@
     bgColor = (CGColorRef)CFRetain([color CGColor]);
 }
 
-- (CFDataRef)copyJpegDataForImage:(CGImageRef)image hasAlpha:(BOOL)__unused hasAlpha
+- (CFDataRef)copyJpegDataForImage:(CGImageRef)image
 {
 	CFMutableDataRef data = NULL;
 	CGSize imageSize;
@@ -104,22 +104,12 @@ bail:
 	if (!imageSource)
 		return NO;
 	
-	BOOL hasAlpha = NO;
-	CFDictionaryRef properties = CGImageSourceCopyPropertiesAtIndex(imageSource, 0, NULL);
-	if (properties)
-	{
-		CFNumberRef hasAlphaProp = CFDictionaryGetValue(properties, CFSTR("HasAlpha"));
-		if (hasAlphaProp)
-			CFNumberGetValue(hasAlphaProp, kCFNumberCharType, &hasAlpha);
-		CFRelease(properties);
-	}
-	
 	CGImageRef image = CGImageSourceCreateImageAtIndex(imageSource, 0, NULL);
 	CFRelease(imageSource);
 	if (!image)
 		return NO;
 		
-	NSData *jpgData = (__bridge_transfer NSData*)[self copyJpegDataForImage:image hasAlpha:hasAlpha];
+	NSData *jpgData = (__bridge_transfer NSData*)[self copyJpegDataForImage:image];
 	CGImageRelease(image);
 	if (!jpgData)
 		return NO;
@@ -147,7 +137,7 @@ bail:
 
 - (NSImage *)convertSampleImage:(CGImageRef)image
 {
-	NSData *jpgData = (__bridge_transfer NSData*)[self copyJpegDataForImage:image hasAlpha:YES];
+	NSData *jpgData = (__bridge_transfer NSData*)[self copyJpegDataForImage:image];
 	if (!jpgData)
 		return nil;
 	
