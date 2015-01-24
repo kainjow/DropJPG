@@ -118,8 +118,7 @@ bail:
 	NSURL *jpgURL = [directoryURL URLByAppendingPathComponent:fileName];
 	jpgURL = [[NSFileManager defaultManager] makeUniqueURL:jpgURL];
 	
-    BOOL wrote = [jpgData writeToURL:jpgURL atomically:YES];
-	if (!wrote)
+	if (![jpgData writeToURL:jpgURL atomically:YES])
 		return NO;
 	
 	if (moveOriginalToTrash)
