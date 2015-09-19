@@ -128,7 +128,7 @@ bail:
 	
 	if (showInFinder)
 		[[NSOperationQueue mainQueue] addOperationWithBlock:^{
-			[[NSWorkspace sharedWorkspace] selectFile:[jpgURL path] inFileViewerRootedAtPath:nil];
+            [[NSWorkspace sharedWorkspace] selectFile:[jpgURL path] inFileViewerRootedAtPath:@""];
 		}];
     
     return YES;
