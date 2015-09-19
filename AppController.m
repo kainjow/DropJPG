@@ -83,18 +83,6 @@
 #pragma mark -
 #pragma mark Actions
 
-- (IBAction)sendFeedback:(id)__unused sender
-{
-	NSDictionary *infoPlist = [[NSBundle mainBundle] infoDictionary];
-	NSString *appVersion = [infoPlist objectForKey:(NSString *)kCFBundleVersionKey];
-	NSString *appName = [[NSProcessInfo processInfo] processName];
-	NSString *email = @"kainjow@kainjow.com";
-	NSString *urlString = [[NSString stringWithFormat:@"mailto:%@?subject=%@ %@ Feedback", email, appName, appVersion] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-	NSURL *emailURL = [NSURL URLWithString:urlString];
-	if (emailURL)
-		[[NSWorkspace sharedWorkspace] openURL:emailURL];
-}
-
 - (IBAction)openPrefs:(id)__unused sender
 {
 	if (!prefsController)

@@ -11,7 +11,6 @@
 
 @interface AppController : NSObject
 
-- (IBAction)sendFeedback:(id)sender;
 - (IBAction)openPrefs:(id)sender;
 
 @end
